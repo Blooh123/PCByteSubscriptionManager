@@ -1,0 +1,44 @@
+a:hover {
+    cursor: pointer;
+}
+/* Custom styles for mobile responsiveness */
+@media (max-width: 640px) {
+    .sidebar {
+        display: none; /* Hide sidebar by default on mobile */
+    }
+    .sidebar.active {
+        display: block; /* Show sidebar when active */
+    }
+    .main-content {
+        margin-left: 0; /* Remove margin for main content on mobile */
+    }
+}
+
+.sidebar-btn {
+    transition: all 0.3s ease-in-out;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.sidebar-btn:hover {
+    background-color: #e0e7ff;
+    transform: scale(1.1);
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 6px; /* Thin horizontal scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent; /* Transparent background */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #ccc; /* Subtle scrollbar color */
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #aaa; /* Darker on hover */
+}
